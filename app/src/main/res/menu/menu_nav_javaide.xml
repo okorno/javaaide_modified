@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/action_premium"-->
+<!--        android:icon="@drawable/baseline_lock_open_24"-->
+<!--        android:title="@string/title_premium_version"-->
+<!--        android:visible="true" />-->
+    <item
+        android:id="@+id/action_editor_color_scheme"
+        android:icon="@drawable/ic_color_lens_white"
+        android:title="@string/editor_theme"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/action_see_logcat"
+        android:icon="@drawable/ic_line_weight_white"
+        android:title="@string/logcat" />
+    <item
+        android:id="@+id/action_sample"
+        android:icon="@drawable/ic_code_white"
+        android:title="@string/sample_code_java" />
+    <item android:title="Build">
+        <menu>
+            <item
+                android:id="@+id/action_build_jar"
+                android:icon="@drawable/ic_jar_file_format"
+                android:title="Build jar archive">
+            </item>
+            <item
+                android:id="@+id/action_run_jar"
+                android:icon="@drawable/ic_jar_file_format"
+                android:title="Run jar archive" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_compiler_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/compiler_setting" />
+</menu>

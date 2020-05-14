@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/diagnostic_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.PagerTabStrip
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
+
+    </androidx.viewpager.widget.PagerTabStrip>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/diagnostic_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ScrollView
+        android:id="@+id/compiler_output_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <com.duy.ide.diagnostic.widget.LogView
+            android:id="@+id/txt_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:scrollbars="vertical"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/smallest_text_size"
+            android:typeface="monospace" />
+
+    </ScrollView>
+
+</androidx.viewpager.widget.ViewPager>
